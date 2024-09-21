@@ -282,14 +282,10 @@ span{
 
     }
 
-    .search-bar .fa-house{
+    .search-bar .fa-house, .search-bar .fa-magnifying-glass{
         display: none;
     }
 
-    .search-bar .fa-magnifying-glass{
-        margin-left: 5%;
-        margin-right: 5%;
-    }
 
     .nav-list .fa-spotify{
         flex-basis: 10%;
