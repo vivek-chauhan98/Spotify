@@ -4,9 +4,14 @@
     font-family: "Poppins", sans-serif;
 }
 
+body{
+    height: 100vh;
+    width: 100%;
+}
+
+
 .header{
-    width: 101%;
-    height: 7.5vh;
+    width: 100%;
 }
 
 .nav-list{
@@ -15,7 +20,7 @@
     font-size: 35px;  
     align-items: center; 
     background-color: #04C704;
-    padding: 5px 20px;
+
 }
 
 .nav-list .fa-spotify:hover{
@@ -60,7 +65,7 @@
 }
 
 .login .btn, .login .btn-1{
-    background-color: #04C704;
+    background-color: #04C704;  
     border-radius: 10px;
     border: 1px solid #04C704;
     font-size: 15px;
@@ -85,8 +90,7 @@
 /* ----------------------------------------------------------artists----------------------------------------------------- */
 
 .artists{
-    height: 43vh;
-    width: 101%;
+    width: 100%;
     position: relative;
 }
 
@@ -167,9 +171,8 @@ span{
 
 .albums{
     background-color: #212121;
-    width: 101%;
+    width: 100%;
     padding-top: 100px;
-    height: 43vh;
 }
 
 
@@ -201,9 +204,8 @@ span{
 
 .radio{
     background-color: #212121;
-    width: 101%;
+    width: 100%;
     padding-top: 100px;
-    height: 43vh;
 }
 
 
@@ -237,8 +239,7 @@ span{
     padding-top: 200px;
     background-color: #212121;
     padding-bottom: 50px;
-    width: 101%;
-    
+    width: 100%;
 }
 
 .footer .row{
@@ -267,4 +268,80 @@ span{
 .logos span:hover{
     cursor: pointer;
     color: whitesmoke;
+}
+
+
+@media (max-width:1000px) {
+
+    .header{
+        min-width: 370px;
+    }
+
+    .nav-list{
+        display: flex;
+
+    }
+
+    .search-bar .fa-house{
+        display: none;
+    }
+
+    .search-bar .fa-magnifying-glass{
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .nav-list .fa-spotify{
+        flex-basis: 10%;
+    }
+
+    .search-bar{
+        flex-basis: 15%;
+    }
+
+    .search-bar input{
+        width: 200px;
+        margin-left: -45%;
+    }
+
+    .login .btn, .login .btn-1{
+        padding: 1px 1px;
+
+    }
+    .row{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 50px;
+    }
+
+    h2 {
+        text-align: center;
+    }
+
+    .artists-col{
+        margin-left: 4rem;
+    }
+
+    .albums-col{
+        margin-left: 4rem;
+    }
+
+    .radio-col{
+        margin-left: 4rem;
+    }
+
+    .footer .row{
+        transform: translateY(-20%);
+    }
+
+    .footer-col{
+        padding-bottom: 30px;
+        text-align: center;
+    }
+
+    .logos span{
+        padding: 20px;
+    }
 }
